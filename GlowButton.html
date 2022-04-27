@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Button</title>
+    <style>
+        .contain{
+            text-align: center;
+            align-items: center;
+            height: 100vh;
+            justify-content: center;
+            background-color: aqua;
+
+
+        }
+        .btn{
+            height: 250px;
+            width: 250px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            animation-name: Borderbb;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            cursor: pointer;
+             }
+            
+       @keyframes Borderbb{
+        0%{
+                background-color: red;
+            }
+            25%{
+                background-color: yellow;
+            }
+            75%{
+                background-color: gray;
+            }
+            100%{
+                background-color: brown;
+            }
+       }      
+
+    </style>
+</head>
+<body>
+    <div class="contain">
+    <button class="btn" type="button">
+        Click here
+    </button>
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Units in CSS</title>
+    <style>
+        .html{
+            font-size: 20px;
+        }
+        .box{
+            text-align: center;
+            font-size: 10px;
+            padding: 2px;
+            height: 100vh;
+            border: 2px solid red;
+            width: 100vw;
+            
+        }
+        #box-1{
+            font-size: 2em;
+            /* Will give font size of 20px
+            That means em means how much multiple of division font size /dimensions */
+            padding: 2em;
+            /* Gives padding of 4px */
+
+        }
+        #box-2{
+            font-size: 3rem;
+            /* Rem is multiple of html / page size dimension. Here html has 20px size (line 10) hence it will get a size of 60px */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1"><h1>This is Heading-1</h1></div>
+    <div class="box" id="box-2"><h1>This is Heading-2</h1></div>
+    <div class="box" id="box-3"><h1>This is Heading-3</h1></div>
+</body>
+</html>

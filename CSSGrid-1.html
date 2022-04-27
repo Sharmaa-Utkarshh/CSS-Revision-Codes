@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grids</title>
+    <style>
+        .contain{
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+            /* grid-template-columns: 100px auto 100px; */
+            /* grid-template-columns: 200px 200px 100px; */
+            grid-gap: 12px;
+        }
+        .box{
+            background-color: yellow;
+            color: red;
+            margin: 2px;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Grid helps in layout design  -->
+    <div class="contain">
+        <div class="box">This is box-1</div>
+        <div class="box">This is box-2</div>
+        <div class="box">This is box-3</div>
+        <div class="box">This is box-4</div>
+        <div class="box">This is box-5</div>
+        <div class="box">This is box-6</div>
+        <div class="box">This is box-7</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-9</div>
+        <div class="box">This is box-10</div>
+        <div class="box">This is box-11</div>
+        <div class="box">This is box-12</div>
+    </div>
+</body>
+</html>
